@@ -16,7 +16,7 @@
         "symfony/security": "~2.1|~3.0"
     },
     "autoload": {
-        "psr-4": { "Ilya\\ActualUserBundle": "" }
+        "psr-4": { "Ilya\\ActualUserBundle\\": "" }
     },
     "suggest": {
         "friendsofsymfony/user-bundle": "Easy to use and override default provider and entity classes"
