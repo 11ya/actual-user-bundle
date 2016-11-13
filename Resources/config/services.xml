@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="ilya_actual_user.doctrine.user_listener" class="Ilya\ActualUserBundle\Doctrine\UserListener" public="false">
+            <tag name="doctrine.event_subscriber" />
+        </service>
+
+        <service id="ilya_actual_user.doctrine.user_group_listener" class="Ilya\ActualUserBundle\Doctrine\UserGroupListener" public="false">
+            <argument on-invalid="null">%fos_user.model.group.class%</argument>
+            <tag name="doctrine.event_subscriber" />
+        </service>
+
+        <service id="ilya_actual_user.provider.fos" class="Ilya\ActualUserBundle\Security\ActualUserProvider" public="false">
+            <argument type="service" id="fos_user.user_manager" on-invalid="null"/>
+        </service>
+    </services>
+</container>
