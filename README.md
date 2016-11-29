@@ -6,7 +6,7 @@ This bundle provides an opportunity to refresh user roles after its changing wit
 
 **1.** Install this bundle using composer
 ``` bash
-    $ composer require 11ya/actual-user-bundle
+    $ composer require 11ya/actual-user-bundle:dev-master
 ```
 or add the package to your ``composer.json`` file directly.
 
