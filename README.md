@@ -4,15 +4,13 @@ This bundle provides an opportunity to refresh user roles after its changing wit
 
 ## Installation
 
-1. Install this bundle using composer
-
+**1.** Install this bundle using composer
 ``` bash
     $ composer require 11ya/actual-user-bundle
 ```
 or add the package to your ``composer.json`` file directly.
 
-2. Register the bundle in ``app/AppKernel.php``
-
+**2.** Register the bundle in ``app/AppKernel.php``
 ``` php
     $bundles = array(
         // ...
