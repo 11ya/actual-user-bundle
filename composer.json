@@ -4,6 +4,8 @@
     "description": "Symfony bundle to refresh user roles after its changing",
     "keywords": ["security", "user", "user-roles", "authorization"],
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Ilya Vertakov",
