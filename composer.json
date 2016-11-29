@@ -19,6 +19,8 @@
         "psr-4": { "Ilya\\ActualUserBundle\\": "" }
     },
     "suggest": {
-        "friendsofsymfony/user-bundle": "Easy to use and override default provider and entity classes"
+        "friendsofsymfony/user-bundle": "Easy to use and override default provider and entity classes",
+        "doctrine/doctrine-bundle": "Using with Doctrine ORM",
+        "doctrine/mongodb-odm-bundle": "Using with Doctrine MongoDB ODM"
     }
 }
